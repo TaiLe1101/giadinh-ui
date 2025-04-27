@@ -9,35 +9,44 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header__container">
-            <div class="header__logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Gia Định Logo" class="header__logo-img">
-                </a>
-            </div>
-            <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="index.html" class="header__nav-link">Trang chủ</a></li>
-                    <li class="header__nav-item header__nav-item--active"><a href="about-us.html" class="header__nav-link">Giới thiệu</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Dịch vụ</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Sản phẩm</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Tin tức</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Liên hệ</a></li>
-                </ul>
-            </nav>
-            <div class="header__contact">
-                <div class="header__contact-phone">
-                    <i class="fas fa-phone-alt"></i>
-                    <span>Hotline: 0987 654 321</span>
+        <!-- Header -->
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Gia Định Logo" class="header__logo-img">
+                    </a>
                 </div>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item"><a href="index.html" class="header__nav-link">Trang chủ</a></li>
+                        <li class="header__nav-item header__nav-item--active"><a href="about-us.html" class="header__nav-link">Giới thiệu</a></li>
+                        <li class="header__nav-item"><a href="service.html" class="header__nav-link">Dịch vụ</a></li>
+                        <li class="header__nav-item header__nav-item--has-submenu">
+                            <a href="#" class="header__nav-link">Sản phẩm <i class="fas fa-chevron-down"></i></a>
+                            <ul class="header__submenu">
+                                <li class="header__submenu-item"><a href="product-category.html?category=den-bat-muoi" class="header__submenu-link">Đèn bắt muỗi</a></li>
+                                <li class="header__submenu-item"><a href="product-category.html?category=thuoc-diet-con-trung" class="header__submenu-link">Thuốc diệt côn trùng</a></li>
+                                <li class="header__submenu-item"><a href="product-category.html?category=bay-con-trung" class="header__submenu-link">Bẫy côn trùng</a></li>
+                                <li class="header__submenu-item"><a href="product-category.html?category=thiet-bi-diet-con-trung" class="header__submenu-link">Thiết bị diệt côn trùng</a></li>
+                                <li class="header__submenu-item"><a href="product-category.html?category=san-pham-khac" class="header__submenu-link">Sản phẩm khác</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__nav-item"><a href="news.html" class="header__nav-link">Tin tức</a></li>
+                        <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Liên hệ</a></li>
+                    </ul>
+                </nav>
+                <div class="header__contact">
+                    <div class="header__contact-phone">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Hotline: 0987 654 321</span>
+                    </div>
+                </div>
+                <button class="header__toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-            <button class="header__toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </header>
+        </header>
 
     <!-- Page Banner -->
     <section class="page-banner">
@@ -286,11 +295,11 @@
                 <div class="footer__column">
                     <h3 class="footer__title">Dịch vụ</h3>
                     <ul class="footer__links">
-                        <li class="footer__link-item"><a href="#" class="footer__link">Diệt muỗi</a></li>
-                        <li class="footer__link-item"><a href="#" class="footer__link">Diệt gián</a></li>
-                        <li class="footer__link-item"><a href="#" class="footer__link">Diệt chuột</a></li>
-                        <li class="footer__link-item"><a href="#" class="footer__link">Diệt mối</a></li>
-                        <li class="footer__link-item"><a href="#" class="footer__link">Phòng chống côn trùng</a></li>
+                        <li class="footer__link-item"><a href="single-service.html" class="footer__link">Diệt muỗi</a></li>
+                        <li class="footer__link-item"><a href="single-service.html" class="footer__link">Diệt gián</a></li>
+                        <li class="footer__link-item"><a href="single-service.html" class="footer__link">Diệt chuột</a></li>
+                        <li class="footer__link-item"><a href="single-service.html" class="footer__link">Diệt mối</a></li>
+                        <li class="footer__link-item"><a href="single-service.html" class="footer__link">Phòng chống côn trùng</a></li>
                     </ul>
                 </div>
                 <div class="footer__column">

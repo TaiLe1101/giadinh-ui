@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh mục sản phẩm - Gia Định</title>
+    <meta name="description"
+        content="Khám phá các sản phẩm diệt côn trùng chất lượng cao từ Gia Định">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+        <!-- Header -->
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Gia Định Logo" class="header__logo-img">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item"><a href="index.html" class="header__nav-link">Trang chủ</a></li>
+                        <li class="header__nav-item"><a href="about-us.html" class="header__nav-link">Giới thiệu</a></li>
+                        <li class="header__nav-item"><a href="service.html" class="header__nav-link">Dịch vụ</a></li>
+                        <li class="header__nav-item header__nav-item--active header__nav-item--has-submenu">
+                            <a href="#" class="header__nav-link">Sản phẩm <i class="fas fa-chevron-down"></i></a>
+                            <ul class="header__submenu">
+                                <li class="header__submenu-item"><a href="product-category.html?category=den-bat-muoi" class="header__submenu-link">Đèn bắt muỗi</a></li>
+                                <li class="header__submenu-item"><a href="product-category.html?category=thuoc-diet-con-trung" class="header__submenu-link">Thuốc diệt côn trùng</a></li>
+                                <li class="header__submenu-item"><a href="product-category.html?category=bay-con-trung" class="header__submenu-link">Bẫy côn trùng</a></li>
+                                <li class="header__submenu-item"><a href="product-category.html?category=thiet-bi-diet-con-trung" class="header__submenu-link">Thiết bị diệt côn trùng</a></li>
+                                <li class="header__submenu-item"><a href="product-category.html?category=san-pham-khac" class="header__submenu-link">Sản phẩm khác</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__nav-item"><a href="news.html" class="header__nav-link">Tin tức</a></li>
+                        <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Liên hệ</a></li>
+                    </ul>
+                </nav>
+                <div class="header__contact">
+                    <div class="header__contact-phone">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Hotline: 0987 654 321</span>
+                    </div>
+                </div>
+                <button class="header__toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1 class="page-banner__title">Sản Phẩm</h1>
+            <div class="page-banner__breadcrumbs">
+                <a href="index.html" class="page-banner__breadcrumb-link">Trang chủ</a>
+                <span class="page-banner__breadcrumb-separator">/</span>
+                <span class="page-banner__breadcrumb-current">Sản phẩm</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Category Section -->
+    <section class="product-category">
+        <div class="container">
+            <div class="product-category__wrapper">
+                <!-- Sidebar with Filters -->
+                <div class="product-category__sidebar">
+                    <div class="product-category__filter-section">
+                        <h3 class="product-category__filter-title">Danh mục sản phẩm</h3>
+                        <ul class="product-category__filter-list">
+                            <li class="product-category__filter-item product-category__filter-item--active">
+                                <a href="product-category.html?category=all" class="product-category__filter-link">Tất cả sản phẩm</a>
+                            </li>
+                            <li class="product-category__filter-item">
+                                <a href="product-category.html?category=den-bat-muoi" class="product-category__filter-link">Đèn bắt muỗi</a>
+                            </li>
+                            <li class="product-category__filter-item">
+                                <a href="product-category.html?category=thuoc-diet-con-trung" class="product-category__filter-link">Thuốc diệt côn trùng</a>
+                            </li>
+                            <li class="product-category__filter-item">
+                                <a href="product-category.html?category=bay-con-trung" class="product-category__filter-link">Bẫy côn trùng</a>
+                            </li>
+                            <li class="product-category__filter-item">
+                                <a href="product-category.html?category=thiet-bi-diet-con-trung" class="product-category__filter-link">Thiết bị diệt côn trùng</a>
+                            </li>
+                            <li class="product-category__filter-item">
+                                <a href="product-category.html?category=san-pham-khac" class="product-category__filter-link">Sản phẩm khác</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="product-category__filter-section">
+                        <h3 class="product-category__filter-title">Giá sản phẩm</h3>
+                        <ul class="product-category__filter-list">
+                            <li class="product-category__filter-item">
+                                <a href="product-category.html?price=duoi-300" class="product-category__filter-link">Dưới 300.000đ</a>
+                            </li>
+                            <li class="product-category__filter-item">
+                                <a href="product-category.html?price=300-500" class="product-category__filter-link">300.000đ - 500.000đ</a>
+                            </li>
+                            <li class="product-category__filter-item">
+                                <a href="product-category.html?price=500-1000" class="product-category__filter-link">500.000đ - 1.000.000đ</a>
+                            </li>
+                            <li class="product-category__filter-item">
+                                <a href="product-category.html?price=tren-1000" class="product-category__filter-link">Trên 1.000.000đ</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="product-category__filter-section">
+                        <h3 class="product-category__filter-title">Thương hiệu</h3>
+                        <ul class="product-category__filter-list">
+                            <li class="product-category__filter-item">
+                                <div class="product-category__filter-checkbox">
+                                    <input type="checkbox" id="brand1" name="brand" value="gia-dinh">
+                                    <label for="brand1">Gia Định</label>
+                                </div>
+                            </li>
+                            <li class="product-category__filter-item">
+                                <div class="product-category__filter-checkbox">
+                                    <input type="checkbox" id="brand2" name="brand" value="phillips">
+                                    <label for="brand2">Phillips</label>
+                                </div>
+                            </li>
+                            <li class="product-category__filter-item">
+                                <div class="product-category__filter-checkbox">
+                                    <input type="checkbox" id="brand3" name="brand" value="panasonic">
+                                    <label for="brand3">Panasonic</label>
+                                </div>
+                            </li>
+                            <li class="product-category__filter-item">
+                                <div class="product-category__filter-checkbox">
+                                    <input type="checkbox" id="brand4" name="brand" value="raid">
+                                    <label for="brand4">Raid</label>
+                                </div>
+                            </li>
+                            <li class="product-category__filter-item">
+                                <div class="product-category__filter-checkbox">
+                                    <input type="checkbox" id="brand5" name="brand" value="baygon">
+                                    <label for="brand5">Baygon</label>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="product-category__filter-button">Lọc sản phẩm</button>
+                    </div>
+                </div>
+
+                <!-- Main Product Content -->
+                <div class="product-category__content">
+                    <div class="product-category__header">
+                        <h2 class="product-category__title">Tất cả sản phẩm</h2>
+                        <div class="product-category__sort">
+                            <label for="sort">Sắp xếp:</label>
+                            <select id="sort" class="product-category__sort-select">
+                                <option value="newest">Mới nhất</option>
+                                <option value="price-asc">Giá: Thấp đến cao</option>
+                                <option value="price-desc">Giá: Cao đến thấp</option>
+                                <option value="popular">Phổ biến nhất</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Products Grid -->
+                    <div class="products__list">
+                        <div class="products__item">
+                            <div class="products__item-img">
+                                <img src="https://dienmayhtech.com/_next/image?url=https%3A%2F%2Fimage.dienmayhtech.com%2FStaticFiles%2FImages%2F2024%2F03%2F29%2Fden-bat-muoi_390c.jpg&w=3840&q=75"
+                                    alt="Đèn bắt muỗi">
+                                <div class="products__item-tag">Bán chạy</div>
+                            </div>
+                            <div class="products__item-content">
+                                <h3 class="products__item-title">Đèn Bắt Muỗi UV LED</h3>
+                                <p class="products__item-desc">Đèn bắt muỗi công nghệ UV LED, không tiếng ồn, an toàn cho trẻ em và thú cưng.</p>
+                                <div class="products__item-price">650.000đ</div>
+                                <a href="#" class="products__item-button">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__item-img">
+                                <img src="https://dienmayhtech.com/_next/image?url=https%3A%2F%2Fimage.dienmayhtech.com%2FStaticFiles%2FImages%2F2024%2F03%2F29%2Fden-bat-muoi_390c.jpg&w=3840&q=75"
+                                    alt="Thuốc diệt muỗi">
+                            </div>
+                            <div class="products__item-content">
+                                <h3 class="products__item-title">Thuốc Diệt Muỗi Sinh Học</h3>
+                                <p class="products__item-desc">Thuốc diệt muỗi gốc thảo mộc an toàn cho sức khỏe, hiệu quả trong 24 giờ.</p>
+                                <div class="products__item-price">350.000đ</div>
+                                <a href="#" class="products__item-button">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__item-img">
+                                <img src="https://dienmayhtech.com/_next/image?url=https%3A%2F%2Fimage.dienmayhtech.com%2FStaticFiles%2FImages%2F2024%2F03%2F29%2Fden-bat-muoi_390c.jpg&w=3840&q=75"
+                                    alt="Bẫy gián">
+                                <div class="products__item-tag">Mới</div>
+                            </div>
+                            <div class="products__item-content">
+                                <h3 class="products__item-title">Bẫy Gián Thông Minh</h3>
+                                <p class="products__item-desc">Bẫy gián hiện đại, không chứa hóa chất độc hại, dễ sử dụng và hiệu quả cao.</p>
+                                <div class="products__item-price">220.000đ</div>
+                                <a href="#" class="products__item-button">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__item-img">
+                                <img src="https://dienmayhtech.com/_next/image?url=https%3A%2F%2Fimage.dienmayhtech.com%2FStaticFiles%2FImages%2F2024%2F03%2F29%2Fden-bat-muoi_390c.jpg&w=3840&q=75"
+                                    alt="Đèn diệt muỗi">
+                            </div>
+                            <div class="products__item-content">
+                                <h3 class="products__item-title">Đèn Diệt Muỗi Ngoài Trời</h3>
+                                <p class="products__item-desc">Đèn diệt muỗi dành cho sân vườn, công suất lớn, chịu được thời tiết khắc nghiệt.</p>
+                                <div class="products__item-price">850.000đ</div>
+                                <a href="#" class="products__item-button">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__item-img">
+                                <img src="https://dienmayhtech.com/_next/image?url=https%3A%2F%2Fimage.dienmayhtech.com%2FStaticFiles%2FImages%2F2024%2F03%2F29%2Fden-bat-muoi_390c.jpg&w=3840&q=75"
+                                    alt="Bẫy chuột">
+                                <div class="products__item-tag">Giảm giá</div>
+                            </div>
+                            <div class="products__item-content">
+                                <h3 class="products__item-title">Bẫy Chuột Thông Minh</h3>
+                                <p class="products__item-desc">Bẫy chuột tự động, bắt sống, không làm hại vật nuôi, dễ dàng xử lý.</p>
+                                <div class="products__item-price">420.000đ</div>
+                                <a href="#" class="products__item-button">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__item-img">
+                                <img src="https://dienmayhtech.com/_next/image?url=https%3A%2F%2Fimage.dienmayhtech.com%2FStaticFiles%2FImages%2F2024%2F03%2F29%2Fden-bat-muoi_390c.jpg&w=3840&q=75"
+                                    alt="Thuốc xịt côn trùng">
+                            </div>
+                            <div class="products__item-content">
+                                <h3 class="products__item-title">Thuốc Xịt Côn Trùng</h3>
+                                <p class="products__item-desc">Thuốc xịt đa năng, diệt nhiều loại côn trùng, không mùi, không gây ô nhiễm không khí.</p>
+                                <div class="products__item-price">180.000đ</div>
+                                <a href="#" class="products__item-button">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__item-img">
+                                <img src="https://dienmayhtech.com/_next/image?url=https%3A%2F%2Fimage.dienmayhtech.com%2FStaticFiles%2FImages%2F2024%2F03%2F29%2Fden-bat-muoi_390c.jpg&w=3840&q=75"
+                                    alt="Máy phun sương">
+                            </div>
+                            <div class="products__item-content">
+                                <h3 class="products__item-title">Máy Phun Sương Diệt Côn Trùng</h3>
+                                <p class="products__item-desc">Máy phun sương chuyên dụng kết hợp thuốc diệt côn trùng, diện tích phun rộng.</p>
+                                <div class="products__item-price">1.250.000đ</div>
+                                <a href="#" class="products__item-button">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__item-img">
+                                <img src="https://dienmayhtech.com/_next/image?url=https%3A%2F%2Fimage.dienmayhtech.com%2FStaticFiles%2FImages%2F2024%2F03%2F29%2Fden-bat-muoi_390c.jpg&w=3840&q=75"
+                                    alt="Tinh dầu đuổi muỗi">
+                            </div>
+                            <div class="products__item-content">
+                                <h3 class="products__item-title">Tinh Dầu Đuổi Muỗi</h3>
+                                <p class="products__item-desc">Tinh dầu thiên nhiên, hương thơm dễ chịu, đuổi muỗi hiệu quả không gây hại sức khỏe.</p>
+                                <div class="products__item-price">280.000đ</div>
+                                <a href="#" class="products__item-button">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="product-category__pagination">
+                        <a href="#" class="product-category__pagination-link product-category__pagination-link--active">1</a>
+                        <a href="#" class="product-category__pagination-link">2</a>
+                        <a href="#" class="product-category__pagination-link">3</a>
+                        <a href="#" class="product-category__pagination-link product-category__pagination-link--next">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta__wrapper">
+                <div class="cta__content">
+                    <h2 class="cta__title">Bạn Cần Tư Vấn Về Sản Phẩm?</h2>
+                    <p class="cta__text">Liên hệ ngay với Gia Định để được tư vấn miễn phí và lựa chọn sản phẩm phù hợp nhất với nhu cầu của bạn.</p>
+                </div>
+                <div class="cta__buttons">
+                    <a href="#" class="cta__button cta__button--primary">Liên Hệ Ngay</a>
+                    <a href="#" class="cta__button cta__button--secondary">Xem Thêm Sản Phẩm</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__column">
+                    <div class="footer__logo">
+                        <img src="images/logo.png" alt="Gia Định Logo">
+                    </div>
+                    <p class="footer__desc">Gia Định - Chuyên cung cấp dịch vụ và sản phẩm diệt côn trùng chuyên nghiệp, an toàn và hiệu quả.</p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Dịch vụ</h3>
+                    <ul class="footer__links">
+                        <li class="footer__link-item"><a href="#" class="footer__link">Diệt muỗi</a></li>
+                        <li class="footer__link-item"><a href="#" class="footer__link">Diệt gián</a></li>
+                        <li class="footer__link-item"><a href="#" class="footer__link">Diệt chuột</a></li>
+                        <li class="footer__link-item"><a href="#" class="footer__link">Diệt mối</a></li>
+                        <li class="footer__link-item"><a href="#" class="footer__link">Phòng chống côn trùng</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Liên kết</h3>
+                    <ul class="footer__links">
+                        <li class="footer__link-item"><a href="index.html" class="footer__link">Trang chủ</a></li>
+                        <li class="footer__link-item"><a href="about-us.html" class="footer__link">Giới thiệu</a></li>
+                        <li class="footer__link-item"><a href="service.html" class="footer__link">Dịch vụ</a></li>
+                        <li class="footer__link-item"><a href="product-category.html" class="footer__link">Sản phẩm</a></li>
+                        <li class="footer__link-item"><a href="#" class="footer__link">Tin tức</a></li>
+                        <li class="footer__link-item"><a href="contact.html" class="footer__link">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Liên hệ</h3>
+                    <ul class="footer__contact-list">
+                        <li class="footer__contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh</span>
+                        </li>
+                        <li class="footer__contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>0987 654 321</span>
+                        </li>
+                        <li class="footer__contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@giadinh.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    &copy; 2025 Gia Định. Tất cả quyền được bảo lưu.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+    <script>
+        // Script for Category Filter
+        $(document).ready(function() {
+            // Handle category filter links
+            $('.product-category__filter-link').on('click', function(e) {
+                e.preventDefault();
+                
+                let categoryUrl = $(this).attr('href');
+                
+                // Here you would typically make an AJAX request to load products
+                // For demo purposes, we'll just update the title
+                let categoryName = $(this).text();
+                $('.product-category__title').text(categoryName);
+                
+                // Toggle active class
+                $('.product-category__filter-item').removeClass('product-category__filter-item--active');
+                $(this).parent().addClass('product-category__filter-item--active');
+                
+                // Update URL without reloading (for demo purposes)
+                window.history.pushState({}, '', categoryUrl);
+            });
+            
+            // Handle sorting
+            $('#sort').on('change', function() {
+                let sortValue = $(this).val();
+                // Here you would typically make an AJAX request to sort products
+                console.log('Sorting by: ' + sortValue);
+            });
+            
+            // Handle pagination
+            $('.product-category__pagination-link').on('click', function(e) {
+                e.preventDefault();
+                
+                // Toggle active class
+                $('.product-category__pagination-link').removeClass('product-category__pagination-link--active');
+                $(this).addClass('product-category__pagination-link--active');
+                
+                // Here you would typically make an AJAX request to load the next page
+                // For demo, we'll just log the page
+                let page = $(this).text();
+                console.log('Navigate to page: ' + page);
+            });
+            
+            // Toggle submenu on mobile
+            $('.header__nav-item--has-submenu > .header__nav-link').on('click', function(e) {
+                if (window.innerWidth < 768) {
+                    e.preventDefault();
+                    $(this).next('.header__submenu').slideToggle();
+                }
+            });
+
+            // Filter button action
+            $('.product-category__filter-button').on('click', function() {
+                // Get selected brands
+                let selectedBrands = [];
+                $('input[name="brand"]:checked').each(function() {
+                    selectedBrands.push($(this).val());
+                });
+                
+                // Here you would typically make an AJAX request to filter products
+                console.log('Filtering by brands: ' + selectedBrands.join(', '));
+            });
+        });
+    </script>
+</body>
+
+</html>
